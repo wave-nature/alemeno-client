@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+  background-color: #000;
+  color: #fff;
+  width: 75%;
+  border-radius: 1.2rem;
+  padding: 1rem;
+}
+
+.img_container {
+  width: 40%;
+  height: 30rem;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 1.2rem;
+  padding: 1rem;
+}
+
+.img {
+  height: 100%;
+  width: 90%;
+  background-size: cover;
+  border-radius: 1.2rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.not-enrolled {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
+}
+
+.enrolled {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.tabs_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.tabs-container {
+  margin: 1rem 0;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.tab {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 1.2rem;
+  text-transform: capitalize;
+  margin: 1rem 0.5rem;
+}
+
+.tab:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.tab-active {
+  background-color: #fff;
+  color: #000;
+}
+
+.tab-content {
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.more_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.tab-content-detail:not(:last-child) {
+  margin: 1rem;
+  border-bottom: 1px solid #dedede52;
+}
+
+.more_content-value {
+  width: 60%;
+  text-align: left;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: 100%;
+  }
+
+  .tabs_wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .tabs-container {
+    width: 50%;
+    overflow-x: visible;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  .img_container {
+    width: 100%;
+    height: 20rem;
+  }
+}

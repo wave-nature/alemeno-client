@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+}
+
+/* reusable classes */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-baseline {
+  align-items: first baseline;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-1 {
+  gap: 0.4rem;
+}
+.gap-2 {
+  gap: 0.8rem;
+}
+.gap-3 {
+  gap: 1.2rem;
+}
+.gap-4 {
+  gap: 1.6rem;
+}
+.gap-5 {
+  gap: 2rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+.text-lg {
+  font-size: 2.8rem;
+}
+.text-md {
+  font-size: 2.2rem;
+}
+.text-xl {
+  font-size: 1.5rem;
+  color: #000;
+}
+.text-2xl {
+  font-size: 3.2rem;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.bg-gray-500 {
+  background-color: #f2f2f2;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.mx-auto {
+  margin: 0 auto !important;
+}
+
+.mt-3 {
+  margin-top: 1.2rem;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+button {
+  all: unset;
+}
+
+input {
+  all: unset;
+}
+
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 44%;
+  }
+}

@@ -1,0 +1,11 @@
+.home {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 2rem 4rem;
+}
+
+@media screen and (max-width: 760px) {
+  .home {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
